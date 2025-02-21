@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Feb 21 11:34:18 2025
+# Process ID: 3540
+# Current directory: E:/Tapped_FIR/Tapped_fir/solution1/sim/verilog
+# Command line: vivado.exe -source open_wave.tcl
+# Log file: E:/Tapped_FIR/Tapped_fir/solution1/sim/verilog/vivado.log
+# Journal file: E:/Tapped_FIR/Tapped_fir/solution1/sim/verilog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+# current_fileset
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/2020.2/data/ip'.
+# open_wave_database fir.wdb
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_fir_top/AESL_inst_fir/AESL_inst_fir_activity
+open_wave_config E:/Tapped_FIR/Tapped_fir/solution1/sim/verilog/fir.wcfg
+current_wave_config {fir.wcfg}
+fir.wcfg
+add_wave {{/apatb_fir_top/AESL_inst_fir/ap_start}} {{/apatb_fir_top/AESL_inst_fir/y}} {{/apatb_fir_top/AESL_inst_fir/x}} {{/apatb_fir_top/AESL_inst_fir/ap_done}} 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 21 12:19:40 2025...

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="fir.cpp" path="E:\Tapped_FIR\FIR_Lab\fir.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="fir_test.cpp" path="E:\Tapped_FIR\FIR_Lab\fir_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

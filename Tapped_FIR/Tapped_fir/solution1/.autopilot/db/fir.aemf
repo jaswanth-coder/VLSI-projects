@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1740117584008">
+  <ports id="1" name="y" type="PortType" originalName="y" coreId="0" bitwidth="32" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="2" name="x" type="PortType" originalName="x" coreId="4294967292" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="53" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="54" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="57" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="60" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="61" source_obj="//@regions.0/@basic_blocks.4/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="62" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="65" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="66" source_obj="//@regions.0/@basic_blocks.4/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="67" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="70" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="73" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="74" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="75" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="76" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="77" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="78" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="81" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="82" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="83" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="84" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <edges id="88" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
+  <edges id="89" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="92" source_obj="//@regions.0/@basic_blocks.2/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="93" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.2"/>
+  <edges id="96" source_obj="//@regions.0/@basic_blocks.2/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.2"/>
+  <edges id="97" source_obj="//@regions.0/@basic_blocks.2/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.3"/>
+  <edges id="98" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.4"/>
+  <edges id="100" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.4"/>
+  <edges id="101" source_obj="//@regions.0/@basic_blocks.2/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.5"/>
+  <edges id="102" source_obj="//@regions.0/@basic_blocks.2/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.5"/>
+  <edges id="103" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.6"/>
+  <edges id="105" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.6"/>
+  <edges id="106" source_obj="//@regions.0/@basic_blocks.2/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.7"/>
+  <edges id="107" source_obj="//@regions.0/@basic_blocks.2/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.8"/>
+  <edges id="108" source_obj="//@regions.0/@basic_blocks.2/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.8"/>
+  <edges id="109" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.9"/>
+  <edges id="110" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="111" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="112" source_obj="//@regions.0/@basic_blocks.2/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="113" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="114" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.1"/>
+  <edges id="117" source_obj="//@regions.0/@basic_blocks.4/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.2"/>
+  <edges id="118" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.2"/>
+  <edges id="119" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.3"/>
+  <edges id="122" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@ports.0"/>
+  <edges id="123" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="194" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="195" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="196" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="197" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.3"/>
+  <edges id="198" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="199" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.4"/>
+  <edges id="200" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.4"/>
+  <edges id="201" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="2147483647" source_obj="//@regions.0/@basic_blocks.3/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.3"/>
+  <edges id="2147483647" source_obj="//@regions.0/@basic_blocks.2/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0" is_back_edge="1"/>
+  <blocks id="15" name="block_15" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_22</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="x_read" lineNumber="4" originalName="x" fileName="FIR_Lab/fir.cpp" fileDirectory=".." coreId="0" contextFuncName="fir" bitwidth="32" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="4" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+      <dataInputObjs>x</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="mul" lineNumber="4" fileName="FIR_Lab/fir.cpp" fileDirectory=".." rtlName="mul_32s_7ns_32_1_1_U1" opType="mul" coreId="2821066672" contextFuncName="fir" bitwidth="32" opcode="mul" m_display="0" m_delay="3.9" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="4" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="br_ln12" lineNumber="12" fileName="FIR_Lab/fir.cpp" fileDirectory=".." coreId="10" contextFuncName="fir" opcode="br" m_display="0" m_delay="0.46" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="12" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+      <controlInputObjs>block_22</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="FIR_Lab/fir.cpp">
+      <validLinenumbers>4</validLinenumbers>
+      <validLinenumbers>12</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="50" name="block_50" type="BlockType">
+    <controlInputObjs>block_22</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="y_write_ln25" lineNumber="25" fileName="FIR_Lab/fir.cpp" fileDirectory=".." coreId="0" contextFuncName="fir" opcode="write" nodeLabel="3.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="25" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>y</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="_ln26" lineNumber="26" fileName="FIR_Lab/fir.cpp" fileDirectory=".." coreId="0" contextFuncName="fir" opcode="ret" nodeLabel="3.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="26" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="FIR_Lab/fir.cpp">
+      <validLinenumbers>25</validLinenumbers>
+      <validLinenumbers>26</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="2" typeName="Pipeline" id="169" pipe_depth="2" RegionName="Shift_Accum_Loop">
+    <basic_blocks id="22" name="block_22" type="BlockType">
+      <controlInputObjs>block_15</controlInputObjs>
+      <controlInputObjs>block_47</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_50</controlOutputObjs>
+      <controlOutputObjs>.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="i" lineNumber="12" originalName="i" fileName="FIR_Lab/fir.cpp" fileDirectory=".." coreId="2823689680" contextFuncName="fir" bitwidth="6" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="12" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <controlInputObjs>block_15</controlInputObjs>
+        <controlInputObjs>block_47</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="acc" originalName="acc" coreId="3803193744" bitwidth="32" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <controlInputObjs>block_15</controlInputObjs>
+        <controlInputObjs>block_47</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="tmp" lineNumber="12" fileName="FIR_Lab/fir.cpp" fileDirectory=".." rtlName="tmp_reg_212" coreId="0" contextFuncName="fir" bitwidth="1" opcode="bitselect" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="12" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="br_ln12" lineNumber="12" fileName="FIR_Lab/fir.cpp" fileDirectory=".." coreId="1120289156" contextFuncName="fir" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="12" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>block_50</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="FIR_Lab/fir.cpp">
+        <validLinenumbers>12</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="28" name=".split" type="BlockType">
+      <controlInputObjs>block_22</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_42</controlOutputObjs>
+      <controlOutputObjs>block_39</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="i_cast1" lineNumber="12" fileName="FIR_Lab/fir.cpp" fileDirectory=".." rtlName="i_cast1_fu_157_p1" coreId="0" contextFuncName="fir" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="12" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="empty_5" lineNumber="12" fileName="FIR_Lab/fir.cpp" fileDirectory=".." rtlName="empty_5_fu_162_p1" coreId="0" contextFuncName="fir" bitwidth="5" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="12" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="icmp_ln16" lineNumber="16" fileName="FIR_Lab/fir.cpp" fileDirectory=".." rtlName="icmp_ln16_fu_166_p2" opType="icmp" coreId="50" contextFuncName="fir" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.71" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="16" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="br_ln16" lineNumber="16" fileName="FIR_Lab/fir.cpp" fileDirectory=".." coreId="0" contextFuncName="fir" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="16" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>block_39</controlInputObjs>
+        <controlInputObjs>block_42</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="FIR_Lab/fir.cpp">
+        <validLinenumbers>12</validLinenumbers>
+        <validLinenumbers>16</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="39" name="block_39" type="BlockType">
+      <controlInputObjs>.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>block_47</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="add_ln21" lineNumber="21" fileName="FIR_Lab/fir.cpp" fileDirectory=".." rtlName="add_ln21_fu_172_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="fir" bitwidth="5" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.82" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="21" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="zext_ln21" lineNumber="21" fileName="FIR_Lab/fir.cpp" fileDirectory=".." rtlName="zext_ln21_fu_178_p1" coreId="0" contextFuncName="fir" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="21" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="shift_reg_addr" lineNumber="21" fileName="FIR_Lab/fir.cpp" fileDirectory=".." coreId="0" contextFuncName="fir" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="21" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="shift_reg_load" lineNumber="21" fileName="FIR_Lab/fir.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="fir" bitwidth="32" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="1" m_delay="0.73" m_isLCDNode="true" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="21" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataInputObjs>store</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="shift_reg_addr_1" lineNumber="21" fileName="FIR_Lab/fir.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="fir" bitwidth="5" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="21" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="shift_reg_addr_1_write_ln21" lineNumber="21" fileName="FIR_Lab/fir.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="fir" opcode="store" nodeLabel="2.0" m_display="1" m_delay="0.73" m_isLCDNode="true" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="21" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="fir_int_int_c_addr" lineNumber="22" fileName="FIR_Lab/fir.cpp" fileDirectory=".." coreId="0" contextFuncName="fir" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="22" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="fir_int_int_c_load" lineNumber="22" fileName="FIR_Lab/fir.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="auto" opType="rom" coreId="101" contextFuncName="fir" bitwidth="32" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="0.73" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="22" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="mul_ln22" lineNumber="22" fileName="FIR_Lab/fir.cpp" fileDirectory=".." rtlName="mul_11s_32s_32_1_1_U2" opType="mul" coreId="0" contextFuncName="fir" bitwidth="32" opcode="mul" nodeLabel="2.0" m_display="0" m_delay="3.9" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="22" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="br_ln0" coreId="0" opcode="br" nodeLabel="2.0" m_display="0" m_delay="0.46" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <controlInputObjs>block_47</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="FIR_Lab/fir.cpp">
+        <validLinenumbers>21</validLinenumbers>
+        <validLinenumbers>22</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="42" name="block_42" type="BlockType">
+      <controlInputObjs>.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>block_47</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="0_write_ln18" lineNumber="18" fileName="FIR_Lab/fir.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="fir" opcode="store" nodeLabel="1.0" m_display="1" m_delay="0.73" m_isLCDNode="true" m_isStartOfPath="true" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="18" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>store</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="br_ln19" lineNumber="19" fileName="FIR_Lab/fir.cpp" fileDirectory=".." coreId="0" contextFuncName="fir" opcode="br" nodeLabel="1.0" m_display="0" m_delay="0.46" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="19" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+        <controlInputObjs>block_47</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="FIR_Lab/fir.cpp">
+        <validLinenumbers>18</validLinenumbers>
+        <validLinenumbers>19</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="47" name="block_47" type="BlockType">
+      <controlInputObjs>block_39</controlInputObjs>
+      <controlInputObjs>block_42</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_22</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="mul_pn" lineNumber="4" fileName="FIR_Lab/fir.cpp" fileDirectory=".." coreId="0" contextFuncName="fir" bitwidth="32" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="4" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <controlInputObjs>block_42</controlInputObjs>
+        <controlInputObjs>block_39</controlInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="add_ln12" lineNumber="12" fileName="FIR_Lab/fir.cpp" fileDirectory=".." rtlName="add_ln12_fu_190_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="fir" bitwidth="6" opcode="add" nodeLabel="2.0" m_display="0" m_delay="0.84" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="12" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="acc_1" lineNumber="9" originalName="acc" fileName="FIR_Lab/fir.cpp" fileDirectory=".." rtlName="acc_1_fu_196_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="fir" bitwidth="32" opcode="add" nodeLabel="2.0" m_display="0" m_delay="1.14" m_topoIndex="26" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="FIR_Lab/fir.cpp" linenumber="9" fileDirectory="E:\Tapped_FIR" functionName="fir"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="br_ln0" coreId="0" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <controlInputObjs>block_22</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="FIR_Lab/fir.cpp">
+        <validLinenumbers>4</validLinenumbers>
+        <validLinenumbers>12</validLinenumbers>
+        <validLinenumbers>9</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <regnodes realName="i_reg_109">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <regnodes realName="mul_pn_reg_134">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="shift_reg_addr_reg_225">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="i_cast1_reg_216">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln16_reg_221">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <regnodes realName="mul_reg_207">
+    <nodeIds>13</nodeIds>
+  </regnodes>
+  <regnodes realName="x_read_reg_202">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <regnodes realName="fir_int_int_c_addr_reg_230">
+    <nodeIds>35</nodeIds>
+  </regnodes>
+  <regnodes realName="acc_reg_121">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="acc_1_reg_240">
+    <nodeIds>45</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln12_reg_235">
+    <nodeIds>44</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_212">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <expressionNodes realName="i_cast1_fu_157">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln21_fu_172">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_5_fu_162">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="fir_int_int_c_addr_gep_fu_86">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_113">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_ln22_fu_183">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_149">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="acc_1_fu_196">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln16_fu_166">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln12_fu_190">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shift_reg_addr_gep_fu_73">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="acc_phi_fu_126">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln21_fu_178">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shift_reg_addr_1_gep_fu_100">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_fu_143">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_pn_phi_fu_137">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="write_ln25_write_fu_66">
+    <nodeIds>48</nodeIds>
+  </ioNodes>
+  <ioNodes realName="x_read_read_fu_60">
+    <nodeIds>12</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="fir_int_int_c">
+    <nodeIds>36</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="shift_reg">
+    <nodeIds>32</nodeIds>
+    <nodeIds>40</nodeIds>
+    <nodeIds>34</nodeIds>
+  </memoryPorts>
+  <ioPorts name="x">
+    <contents name="read">
+      <nodeIds>12</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="y">
+    <contents name="write">
+      <nodeIds>48</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="2" latency="2"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="2" latency="2"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="32" stage="1" latency="2"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="2"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="fir" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="40" mMaxLatency="40">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>15</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="Shift_Accum_Loop" mII="2" mDepth="2" mMinTripCount="19" mMaxTripCount="19" mMinLatency="38" mMaxLatency="38" mType="1">
+      <basicBlocks>22</basicBlocks>
+      <basicBlocks>28</basicBlocks>
+      <basicBlocks>39</basicBlocks>
+      <basicBlocks>42</basicBlocks>
+      <basicBlocks>47</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>50</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>
